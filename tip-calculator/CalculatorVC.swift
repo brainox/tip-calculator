@@ -47,11 +47,11 @@ class CalculatorVC: UIViewController {
             make.top.equalTo(view.snp.topMargin).offset(16)
         }
         
-        resultView.snp.makeConstraints { make in
+        logoView.snp.makeConstraints { make in
             make.height.equalTo(48)
         }
         
-        logoView.snp.makeConstraints { make in
+        resultView.snp.makeConstraints { make in
             make.height.equalTo(224)
         }
         
