@@ -20,6 +20,11 @@
 		9B39FB9B2A9A91A700E7F56E /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9B39FB9A2A9A91A700E7F56E /* CombineCocoa */; };
 		9B39FB9E2A9A920D00E7F56E /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 9B39FB9D2A9A920D00E7F56E /* SnapshotTesting */; };
 		9B39FBA02A9A922800E7F56E /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9B39FB9F2A9A922800E7F56E /* CombineCocoa */; };
+		9B39FBA32A9A98C200E7F56E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FBA22A9A98C200E7F56E /* LogoView.swift */; };
+		9B39FBA52A9A9B0E00E7F56E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FBA42A9A9B0E00E7F56E /* ResultView.swift */; };
+		9B39FBA72A9A9B4A00E7F56E /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FBA62A9A9B4A00E7F56E /* BillInputView.swift */; };
+		9B39FBA92A9A9B7A00E7F56E /* TipInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FBA82A9A9B7A00E7F56E /* TipInputView.swift */; };
+		9B39FBAB2A9A9B8500E7F56E /* SplitInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FBAA2A9A9B8500E7F56E /* SplitInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,11 @@
 		9B39FB802A9A908D00E7F56E /* tip-calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tip-calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B39FB842A9A908D00E7F56E /* tip_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITests.swift; sourceTree = "<group>"; };
 		9B39FB862A9A908D00E7F56E /* tip_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B39FBA22A9A98C200E7F56E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		9B39FBA42A9A9B0E00E7F56E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		9B39FBA62A9A9B4A00E7F56E /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
+		9B39FBA82A9A9B7A00E7F56E /* TipInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInputView.swift; sourceTree = "<group>"; };
+		9B39FBAA2A9A9B8500E7F56E /* SplitInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,7 @@
 		9B39FB622A9A908B00E7F56E /* tip-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				9B39FBA12A9A98B500E7F56E /* View */,
 				9B39FB632A9A908B00E7F56E /* AppDelegate.swift */,
 				9B39FB652A9A908B00E7F56E /* SceneDelegate.swift */,
 				9B39FB672A9A908B00E7F56E /* CalculatorVC.swift */,
@@ -140,6 +151,18 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B39FBA12A9A98B500E7F56E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9B39FBA22A9A98C200E7F56E /* LogoView.swift */,
+				9B39FBA42A9A9B0E00E7F56E /* ResultView.swift */,
+				9B39FBA62A9A9B4A00E7F56E /* BillInputView.swift */,
+				9B39FBA82A9A9B7A00E7F56E /* TipInputView.swift */,
+				9B39FBAA2A9A9B8500E7F56E /* SplitInputView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B39FB682A9A908B00E7F56E /* CalculatorVC.swift in Sources */,
+				9B39FBA32A9A98C200E7F56E /* LogoView.swift in Sources */,
+				9B39FBA72A9A9B4A00E7F56E /* BillInputView.swift in Sources */,
+				9B39FBA52A9A9B0E00E7F56E /* ResultView.swift in Sources */,
 				9B39FB642A9A908B00E7F56E /* AppDelegate.swift in Sources */,
 				9B39FB662A9A908B00E7F56E /* SceneDelegate.swift in Sources */,
+				9B39FBAB2A9A9B8500E7F56E /* SplitInputView.swift in Sources */,
+				9B39FBA92A9A9B7A00E7F56E /* TipInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
