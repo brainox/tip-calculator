@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B24E1702A9DC85900E55B99 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B24E16F2A9DC85900E55B99 /* UIView+Extension.swift */; };
 		9B39FB642A9A908B00E7F56E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FB632A9A908B00E7F56E /* AppDelegate.swift */; };
 		9B39FB662A9A908B00E7F56E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FB652A9A908B00E7F56E /* SceneDelegate.swift */; };
 		9B39FB682A9A908B00E7F56E /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B39FB672A9A908B00E7F56E /* CalculatorVC.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B24E16F2A9DC85900E55B99 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9B39FB602A9A908B00E7F56E /* tip-calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tip-calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B39FB632A9A908B00E7F56E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B39FB652A9A908B00E7F56E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9B39FBB22A9AA17200E7F56E /* UIColor+Extension.swift */,
+				9B24E16F2A9DC85900E55B99 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B39FB682A9A908B00E7F56E /* CalculatorVC.swift in Sources */,
+				9B24E1702A9DC85900E55B99 /* UIView+Extension.swift in Sources */,
 				9B39FBA32A9A98C200E7F56E /* LogoView.swift in Sources */,
 				9B39FBAE2A9AA12A00E7F56E /* ThemeColor.swift in Sources */,
 				9B39FBB32A9AA17200E7F56E /* UIColor+Extension.swift in Sources */,
