@@ -45,6 +45,15 @@ class BillInputView: UIView {
             style: .plain,
             target: self,
             action: #selector(doneButtonTapped))
+        toolbar.items = [
+            UIBarButtonItem(
+                barButtonSystemItem: .flexibleSpace,
+                target: nil,
+                action: nil),
+            doneButton
+        ]
+        toolbar.isUserInteractionEnabled = true
+        textField.inputAccessoryView = toolbar
         return textField
     }()
     
@@ -58,11 +67,36 @@ class BillInputView: UIView {
     }
     
     private func layout() {
-        backgroundColor = .purple
+        [headerView, textFieldContainerView].forEach(addSubview(_:))
+        
+        headerView.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.centerY.equalTo(textFieldContainerView.snp.centerY)
+            make.width.equalTo(68)
+            make.trailing.equalTo(textFieldContainerView.snp.leading).offset(-24)
+        }
+        
+        textFieldContainerView.snp.makeConstraints { make in
+            make.top.trailing.bottom.equalToSuperview()
+        }
+        
+        textFieldContainerView.addSubview(currencyDenominationLabel)
+        textFieldContainerView.addSubview(textField)
+        
+        currencyDenominationLabel.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview()
+            make.leading.equalTo(textFieldContainerView.snp.leading).offset(16)
+        }
+        
+        textField.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview()
+            make.leading.equalTo(currencyDenominationLabel.snp.trailing).offset(16)
+            make.trailing.equalTo(textFieldContainerView.snp.trailing).offset(-16)
+        }
     }
     
     @objc private func doneButtonTapped() {
-        
+        textField.endEditing(true)
     }
 }
 
