@@ -13,7 +13,7 @@ class BillInputView: UIView {
         return HeaderView()
     }()
     
-    private let textFieldContainerView: UIView = {
+    private lazy var textFieldContainerView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.addCornerRadius(radius: 8.0)
