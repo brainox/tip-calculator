@@ -153,6 +153,10 @@ class HeaderView: UIView {
         }
     }
     
+    /// Injecting the topText and the bottom text to the Header View
+    /// - Parameters:
+    ///   - topText: The top text.
+    ///   - bottomText: The bottom text.
     func configure(topText: String, bottomText: String) {
         topLabel.text = topText
         bottomLabel.text = bottomText
